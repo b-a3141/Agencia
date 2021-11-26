@@ -20,7 +20,7 @@
     crossorigin="anonymous">
 
     <link  rel="stylesheet" type="text/css" href="https:cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"/>
-    <title>Modificaciones del administrador</title>
+    <title>Alta Promociones</title>
 
     
 
@@ -48,41 +48,43 @@
 
         <thead>
           <tr>
-              <th>Name</th>
-              <th>Tipo de Atracción</th>
-              <th>Monedas</th>
-              <th>Tiempo</th>
+              <th>Tipo de promoción</th>
+              <th>Tipo de Atraccion</th>
+              <th>Nombre</th>
+              <th>Descuento</th>
           </tr>
         </thead>
           <tbody>
 
           <tr>
-            <td>
-            <div class="input-group flex-nowrap">
-			  <span class="input-group-text" id="addon-wrapping">@</span>
-			  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-			</div>
-			</td>
+         
             
             <td>
 				<div class="input-group flex-nowrap">
-				  <span class="input-group-text" id="addon-wrapping">T</span>
-				  <input type="text" class="form-control" placeholder="Tipo Atracción Preferida" aria-label="TipoAtraccion" aria-describedby="addon-wrapping">
+				  <span class="input-group-text" id="addon-wrapping">TP</span>
+				  <input type="text" class="form-control" placeholder="AxB - % - ABS" aria-label="TipoPromocion" aria-describedby="addon-wrapping">
 				</div>
 			</td>
             
 			<td>
 				<div class="input-group flex-nowrap">
-				  <span class="input-group-text" id="addon-wrapping">$</span>
-				  <input type="text" class="form-control" placeholder="Monedas" aria-label="Monedas" aria-describedby="addon-wrapping">
+				  <span class="input-group-text" id="addon-wrapping">TA</span>
+				  <input type="text" class="form-control" placeholder="TipoAtr" aria-label="TipoAtraccion" aria-describedby="addon-wrapping">
 				</div>
 			</td>
             
             <td>
 				<div class="input-group flex-nowrap">
-				  <span class="input-group-text" id="addon-wrapping"><img src="../img/reloj.jpg" alt="reloj" width="20" height="20" /></span>
-				  <input type="text" class="form-control" placeholder="Tiempo" aria-label="Tiempo" aria-describedby="addon-wrapping">
+				  <span class="input-group-text" id="addon-wrapping">N</span>
+				  <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="addon-wrapping">
 				</div>
+			</td>
+			
+			   <td>
+            <div class="input-group flex-nowrap">
+			  <span class="input-group-text" id="addon-wrapping">D</span>
+			  <input type="text" class="form-control" placeholder="Descuento" aria-label="descuento" aria-describedby="addon-wrapping">
+			</div>
 			</td>
           </tr>
                   </tbody>
@@ -92,9 +94,9 @@
       
       </div>
 
-      <a class="btn btn-secondary" href="javascript: history.go(-1)">Descartar</a>     
       <button type="button" id="btnGuardar"  class="btn btn-success">Guardar cambios</button>
-       <a class="btn btn-secondary" href="logout.html">Salir</a>
+      <a class="btn btn-secondary" href="logout.html">Salir</a>
+      <a class="btn btn-secondary" href="javascript: history.go(-1)">Descartar</a> 
     </div>
     
 
@@ -109,7 +111,9 @@
 </script>
 
 <script  src="https:cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-
+<script  type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function(){
+   $('tablaDelAdmin').DataTable()} );
   
 </script>
 
